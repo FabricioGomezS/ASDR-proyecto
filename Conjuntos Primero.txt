@@ -1,0 +1,48 @@
+Conjuntos Primero:
+First(PROGRAM) = {fun, var, !, -, true, false, null, number, string, id, (, for, if, print, return, while, {, ε}
+First(DECLARATION) = {fun, var, !, -, true, false, null, number, string, id, (, for, if, print, return, while, {, ε}
+First(FUN_DECL) = {fun}
+First(VAR_DECL) = {var}
+First(VAR_INIT) = {=, ε}
+
+First(STATEMENT) = {!, -, true, false, null, number, string, id, (, for, if, print, return, while, { }
+First(EXPR_STMT) = {-,!, true, false, null, number, string,id,( }
+First(FOR_STMT) = {for}
+First(FOR_STMT_1) = {var,!,-,true,false,null,number,string,id,(,;}
+First(FOR_STMT_2) = {!,-,true,false,null,number,string,id,(,;}
+First(FOR_STMT_3) = {!,-,true,false,null,number,string,id,(, ε}
+First(IF_STMT) = {if}
+First(ELSE_STATEMENT) = {else, ε}
+First(PRINT_STMT) = {print}
+First(RETURN_STMT) = {return}
+First(RETURN_EXP_OPC) = {!,-,true,false,null,number,string,id,(, ε}
+First(WHILE_STMT) = {while}
+First(BLOCK) = { { }
+
+First(EXPRESSION) = {!,-,true,false,null,number,string,id,(}
+First(ASSIGNMENT) = {!,-,true,false,null,number,string,id,(}
+First(ASSIGNMENT_OPC) = {=, ε}
+First(LOGIC_OR) = {!,-,true,false,null,number,string,id,(}
+First(LOGIC_OR_2) = {or, ε}
+First(LOGIC_AND) = {!,-,true,false,null,number,string,id,(}
+First(LOGIC_AND_2) = {and, ε}
+First(EQUALITY) = {!,-,true,false,null,number,string,id,(}
+First(EQUALITY_2) = {!=, ==, ε}
+First(COMPARISON) = {!,-,true,false,null,number,string,id,(}
+First(COMPARISON_2) = {>, >=, <, <=, ε}
+First(TERM) = {!,-,true,false,null,number,string,id,(}
+First(TERM_2) = {-, +, ε}
+First(FACTOR) = {!,-,true,false,null,number,string,id,(}
+First(FACTOR_2) = {/, *, ε}
+First(UNARY) = {!,-,true,false,null,number,string,id,(}
+First(CALL) = {true, false, null, number, string,id, (}
+First(CALL_2) = {(, ε}
+First(PRIMARY) = {true, false, null, number, string, id, (}
+
+First(FUNCTION) = {id}
+First(FUNCTIONS) = {fun, ε}
+First(PARAMETERS_OPC) = {id, ε}
+First(PARAMETERS) = {id}
+First(PARAMETERS_2) = {, , ε}
+First(ARGUMENTS_OPC) = {!, -, true, false, null, number, string, id,(, ε}
+First(ARGUMENTS) = {, , ε}
