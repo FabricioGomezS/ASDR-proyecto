@@ -1,0 +1,48 @@
+Conjuntos Primero:
+(PROGRAM) = {fun, var, !, -, true, false, null, number, string, id, (, for, if, print, return, while, {, ε}
+(DECLARATION) = {fun, var, !, -, true, false, null, number, string, id, (, for, if, print, return, while, {, ε}
+(FUN_DECL) = {fun}
+(VAR_DECL) = {var}
+(VAR_INIT) = {=, ε}
+
+(STATEMENT) = {!, -, true, false, null, number, string, id, (, for, if, print, return, while, { }
+(EXPR_STMT) = {-,!, true, false, null, number, string,id,( }
+(FOR_STMT) = {for}
+(FOR_STMT_1) = {var,!,-,true,false,null,number,string,id,(,;}
+(FOR_STMT_2) = {!,-,true,false,null,number,string,id,(,;}
+(FOR_STMT_3) = {!,-,true,false,null,number,string,id,(, ε}
+(IF_STMT) = {if}
+(ELSE_STATEMENT) = {else, ε}
+(PRINT_STMT) = {print}
+(RETURN_STMT) = {return}
+(RETURN_EXP_OPC) = {!,-,true,false,null,number,string,id,(, ε}
+(WHILE_STMT) = {while}
+(BLOCK) = { { }
+
+(EXPRESSION) = {!,-,true,false,null,number,string,id,(}
+(ASSIGNMENT) = {!,-,true,false,null,number,string,id,(}
+(ASSIGNMENT_OPC) = {=, ε}
+(LOGIC_OR) = {!,-,true,false,null,number,string,id,(}
+(LOGIC_OR_2) = {or, ε}
+(LOGIC_AND) = {!,-,true,false,null,number,string,id,(}
+(LOGIC_AND_2) = {and, ε}
+(EQUALITY) = {!,-,true,false,null,number,string,id,(}
+(EQUALITY_2) = {!=, ==, ε}
+(COMPARISON) = {!,-,true,false,null,number,string,id,(}
+(COMPARISON_2) = {>, >=, <, <=, ε}
+(TERM) = {!,-,true,false,null,number,string,id,(}
+(TERM_2) = {-, +, ε}
+(FACTOR) = {!,-,true,false,null,number,string,id,(}
+(FACTOR_2) = {/, *, ε}
+(UNARY) = {!,-,true,false,null,number,string,id,(}
+(CALL) = {true, false, null, number, string,id, (}
+(CALL_2) = {(, ε}
+(PRIMARY) = {true, false, null, number, string, id, (}
+
+(FUNCTION) = {id}
+(FUNCTIONS) = {fun, ε}
+(PARAMETERS_OPC) = {id, ε}
+(PARAMETERS) = {id}
+(PARAMETERS_2) = {, , ε}
+(ARGUMENTS_OPC) = {!, -, true, false, null, number, string, id,(, ε}
+(ARGUMENTS) = {, , ε}
